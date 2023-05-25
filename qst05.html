@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lst 02 - Qst 05 - 02 Números: Calculadora</title>
+
+    <script type="text/javascript">          
+        {               
+            function numerosCalculadora()
+                {
+                    let num1 = parseInt(document.getElementById("num1").value);
+                    let num2 = parseInt(document.getElementById("num2").value);
+                    let opcao = parseInt(document.getElementById("opcao").value);
+
+                    if(opcao = 1)
+                        {
+                            let media = ((num1 + num2) / 2);
+                            document.getElementById("resultado").innerHTML = "Média dos números é iguial: "+ media
+                        }
+                    
+                    if(opcao = 3)
+                        {
+                            let produto = num1 * num2;
+                            document.getElementById("resultado").innerHTML = "Média dos números é iguial: "+ produto
+                        }
+                           
+                    if(opcao = 4)
+                        {
+                            let divisao = num1 / num2;
+                            document.getElementById("resultado").innerHTML = "Média dos números é iguial: "+ divisao
+                        }    
+                }       
+        }
+    </script>
+
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Informe os 2 números e escolha uma das opções</legend><br>
+            <label for="num1">1º número: </label> <input type="number" id="num1"><br><br>
+            <label for="num2">2º número: </label> <input type="number" id="num2"><br><br>
+            <label for="opcao">Escolha uma das opções: </label><br>
+            <label>1 - Médias entre os números digitados </label><br>
+            <label>2 - Diferença do maior pelo menor </label><br>
+            <label>3 - Produto entre os números digitados </label><br>
+            <label>4 - Divisão do primeiro pelo segundo nnúmero informado </label><br><br>
+            <label for="opcao">Digite a opção escolhida: </label> <input type="number" id="opcao"><br><br>
+        </fieldset>
+    </form><br>
+    <button onclick="numerosCalculadora()">Executar Script</button>
+    <p id="resultado"></p>
+</html>

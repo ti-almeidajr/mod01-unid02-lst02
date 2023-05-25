@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lst 02 - Qst 06 - Tabuada</title>
+
+    <script type="text/javascript">          
+        {               
+            function tabuada()
+                {
+                    let numero = parseInt(document.getElementById("numero").value);
+                    
+                    for(let cont = 1; cont < 11; cont++)
+                        {
+                            document.write(numero + " X " + cont + " = " + (numero * cont) + "<br>");
+                        }
+                    
+                }
+        }
+    </script>
+
+</head>
+<body>
+    <p>Informe número: <input type="number" id="numero"></p>
+    <p><input type="button" value="Gerar Tabuada" onclick="tabuada()"></p>
+    <p id="resultado"></p>
+</html>
