@@ -8,14 +8,16 @@
         {               
             function quadradoNumeros()
                 {
-                    let numero = parseInt(document.getElementById("numero").value);
-                    
-                    for(let cont = 1; cont < 6; cont++)
-                        {
-                            let quadrado = numero * numero;
-                            document.getElementById("resultado").innerHTML = "O quadrado do número " + numero + " é igual a " + quadrado
-                        }
-                    
+                    let num, quadrado;
+                    let cont = 1;
+
+                    while (cont < 5){
+                        num = parseInt(document.getElementById("num").value);
+                        quadrado = num * num;
+                        cont++;
+                    }
+                    document.getElementById("resultado").innerHTML = "O quadrado do número " + numero + " é igual a " + quadrado
+                            
                 }
         }
     </script>
@@ -25,7 +27,7 @@
     <form>
         <fieldset>
             <legend>Informe o número que deseja ver a tabuada</legend><br>
-            <label for="numero">Informe número: </label> <input type="number" id="numero"><br><br>
+            <label for="num">Informe número: </label> <input type="number" id="num"><br><br>
         </fieldset>
     </form><br>
     <button onclick="quadradoNumeros()">Executar Script</button>
