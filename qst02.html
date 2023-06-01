@@ -10,13 +10,13 @@
                 {
                     let num = parseFloat(document.getElementById("num").value);
 
-                    if(num /)
+                    if(num % 3 == 0)
                         {
-                            document.getElementById("resultado").innerHTML = "Média Final: "+ media +"<br>Resultado Final: Aluno APROVADO"
+                            document.getElementById("resultado").innerHTML = "O número : " + num + "é múltiplo de 3"
                         }
                     else
                         {
-                            document.getElementById("resultado").innerHTML = "Média Final: "+ media +"<br>Resultado Final: Aluno REPROVADO"
+                            document.getElementById("resultado").innerHTML = "O número : " + num + "não é múltiplo de 3"
                         }
                 }       
         }
@@ -27,11 +27,8 @@
     <form>
         <fieldset>
             <legend>Informar 4 notas de um aluno, calcular média e informar se aprovado ou reprovado, considerando para aprovação média 7.</legend><br>
-            <label for="nota1">1ª nota: </label> <input type="text" id="nota1" name="curso" value="" size="2" maxlength="3">
-            <label for="nota2">2ª nota: </label> <input type="text" id="nota2" name="curso" value="" size="2" maxlength="3">
-            <label for="nota3">3ª nota: </label> <input type="text" id="nota3" name="curso" value="" size="2" maxlength="3">
-            <label for="nota4">4ª nota: </label> <input type="text" id="nota4" name="curso" value="" size="2" maxlength="3">
-            <input type="button" value="Calcular Média" onclick="mediaAluno()">
+            <label for="num">Informe um número: </label> <input type="text" id="num" name="curso" value="" size="2" maxlength="3">
+            <input type="button" value="Verificar se é múltiplo" onclick="multiplo()">
         </fieldset>
     </form><br>
     <p id="resultado"></p>
