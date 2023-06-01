@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Lst 02 - Qst 05 - 02 Números: Calculadora</title>
+    <title>Lst 02 - Qst 05</title>
 
     <script type="text/javascript">          
         {               
@@ -11,26 +11,32 @@
                     let num1 = parseInt(document.getElementById("num1").value);
                     let num2 = parseInt(document.getElementById("num2").value);
                     let opcao = parseInt(document.getElementById("opcao").value);
-                    let produto;
+                    let media, diferenca, produto, divisao;
 
-                    if(opcao = 1)
+                    if(opcao == 1)
                         {
-                            let media = ((num1 + num2) / 2);
+                            media = ((num1 + num2) / 2);
                             document.getElementById("resultado").innerHTML = "Média dos números é iguial: "+ media
                         }
-                    
-                    if(opcao = 3)
+
+                    if(opcao == 2)
                         {
-                            produto = num1 * num2;
-                            document.getElementById("resultado").innerHTML = "O produto entre os números é iguial: "+ produto
+                            diferenca = (num1 - num2);
+                            document.getElementById("resultado").innerHTML = "Média dos números é iguial: "+ diferenca
                         }
-                           
-                    if(opcao = 4)
+
+                    if(opcao == 3)
                         {
-                            let divisao = num1 / num2;
-                            document.getElementById("resultado").innerHTML = "Divisão do primeiro pelo segundo número é iguial: "+ divisao
-                        }    
-                }       
+                            produto = (num1 * num2);
+                            document.getElementById("resultado").innerHTML = "Média dos números é iguial: "+ produto
+                        }
+                    
+                    if(opcao == 4)
+                        {
+                            divisao = (num1 / num2);
+                            document.getElementById("resultado").innerHTML = "Média dos números é iguial: "+ divisao
+                        }
+                    }       
         }
     </script>
 
@@ -38,7 +44,7 @@
 <body>
     <form>
         <fieldset>
-            <legend>Informar 2 números e escolha uma das opções informadas</legend><br>
+            <legend>QST05: Informar 2 números e escolher uma das opções</legend><br>
             <label for="num1">1º número: </label> <input type="text" id="num1" name="curso" value="" size="2" maxlength="5">
             <label for="num2">2º número: </label> <input type="text" id="num2" name="curso" value="" size="2" maxlength="5"><br><br>
             <label for="opcao">Escolha uma das opções: </label><br>
