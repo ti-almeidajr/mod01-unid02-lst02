@@ -2,17 +2,20 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Lst 02 - Qst 06 - Tabuada</title>
+    <title>Lst 02 - Qst 06</title>
 
     <script type="text/javascript">          
         {               
             function tabuada()
                 {
-                    let numero = parseInt(document.getElementById("numero").value);
                     
-                    for(let cont = 1; cont < 11; cont++)
+                    let cont = 1;
+
+                    while(cont <= 5)
                         {
-                            document.write(numero + " X " + cont + " = " + (numero * cont) + "<br>");
+                            let num = parseInt(document.getElementById("num").value);
+                            document.getElementById("resultado").innerHTML = + num + " x " + cont + " = " + (num * cont) + "<br>";
+                            cont++;
                         }
                     
                 }
@@ -21,7 +24,13 @@
 
 </head>
 <body>
-    <p>Informe número: <input type="number" id="numero"></p>
+    <form>
+        <fieldset>
+            <legend>QST06: Informar 1 números e mostrar tabuada</legend><br>
+            <label for="num">Digite um número: </label> <input type="text" id="num" name="curso" value="" size="2" maxlength="5">
+        </fieldset>
+    </form>
+
     <p><input type="button" value="Gerar Tabuada" onclick="tabuada()"></p>
     <p id="resultado"></p>
 </html>
