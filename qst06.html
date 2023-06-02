@@ -8,8 +8,10 @@
         {               
             function tabuada()
                 {
+                    let num = parseInt(document.getElementById("num").value);
                     for (let cont = 1; cont < 11; cont++) {
-                        document.write("Almeida" + "<br>");
+                        document.getElementById("resultado").innerHTML = "Média dos números é iguial: "+ divisao
+                        document.write(+ num + "<br>");
                         
                     }
                 }       
@@ -18,6 +20,13 @@
 
 </head>
 <body>
-    
+    <form>
+        <fieldset>
+            <legend>QST06: Informar 1 número e mostrar e mostrar tabuada</legend><br>
+            <label for="num">Digite o número da tabuada: </label> <input type="text" id="num" name="curso" value="" size="2" maxlength="3">
+            <input type="button" value="Verificar Menor Número" onclick="tabuada()">
+        </fieldset>
+    </form><br>
+    <p id="resultado"></p>
 </body>
 </html>
