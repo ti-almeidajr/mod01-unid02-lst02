@@ -1,0 +1,29 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Lst 02 - Qst 06</title>
+
+    <script type="text/javascript">          
+        {               
+            function quadrado()
+                {
+                    let quadrado;
+                    let num = parseInt(document.getElementById("num").value);
+                    for (let cont = 1; cont <= 5; cont++) {
+                        quadrado = num * num;
+                        document.write ("O quadrado do número " + num + " é " + + " <br> " );  
+                    }
+                }       
+        }
+    </script>
+
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>QST07: Informar 5 número e mostrar e mostrar o quadrado deles</legend><br>
+            <label for="num">Digite um número para gerar a tabuada: </label> <input type="text" id="num" name="curso" value="" size="2" maxlength="3">
+            <input type="button" value="Gerar Tabuada" onclick="quadrado()">
+        </fieldset>
+    </form><br>
+</body>
+</html>
