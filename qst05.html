@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Lst 02 - Qst 05</title>
+    <title>Lista 02 - Questão 05</title>
 
     <script type="text/javascript">          
         {               
@@ -44,7 +44,7 @@
 <body>
     <form>
         <fieldset>
-            <legend>QST05: Informar 2 números e escolher uma das opções</legend><br>
+            <legend>Questão 05</legend><br>
             <label for="num1">1º número: </label> <input type="text" id="num1" name="curso" value="" size="2" maxlength="5">
             <label for="num2">2º número: </label> <input type="text" id="num2" name="curso" value="" size="2" maxlength="5"><br><br>
             <label for="opcao">Escolha uma das opções: </label><br>
@@ -53,9 +53,12 @@
             <label>3 - Produto entre os números digitados </label><br>
             <label>4 - Divisão do primeiro pelo segundo nnúmero informado </label><br><br>
             <label for="opcao">Digite a opção escolhida: </label> <input type="text" id="opcao" name="curso" value="" size="2" maxlength="5"><br><br>
+            <button onclick="numerosCalculadora()">Executar Script</button><br><br>
+            <fieldset>
+                <legend>RESULTADO</legend>
+                    <p id="resultado">  </p>
+            </fieldset>
         </fieldset>
     </form><br>
-    <button onclick="numerosCalculadora()">Executar Script</button>
-    <p id="resultado"></p>
 </body>
 </html>

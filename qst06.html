@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Lst 02 - Qst 06</title>
+    <title>Lista 02 - Questão 06</title>
 
     <script type="text/javascript">          
         {               
@@ -20,9 +20,14 @@
 <body>
     <form>
         <fieldset>
-            <legend>QST06: Informar 1 número e mostrar e mostrar tabuada</legend><br>
+            <legend>Questão 06</legend><br>
             <label for="num">Digite um número para gerar a tabuada: </label> <input type="text" id="num" name="curso" value="" size="2" maxlength="3">
-            <input type="button" value="Gerar Tabuada" onclick="tabuada()">
+            <input type="button" value="Gerar Tabuada" onclick="tabuada()"><br><br>
+            <button onclick="numerosCalculadora()">Executar Script</button><br><br>
+            <fieldset>
+                <legend>RESULTADO</legend>
+                    <p id="resultado">  </p>
+            </fieldset>
         </fieldset>
     </form><br>
 </body>

@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Lst 02 - Qst 01</title>
+    <title>Lista 02 - Questão 01</title>
 
     <script type="text/javascript">          
         {               
@@ -30,14 +30,17 @@
 <body>
     <form>
         <fieldset>
-            <legend>QST01: Informar 4 notas de um aluno, calcular média e informar se aprovado ou reprovado, considerando para aprovação média 7</legend><br>
+            <legend>Questão 01</legend><br>
             <label for="nota1">Digite a 1ª nota: </label> <input type="text" id="nota1" name="curso" value="" size="2" maxlength="3">
             <label for="nota2">Digite a 2ª nota: </label> <input type="text" id="nota2" name="curso" value="" size="2" maxlength="3">
             <label for="nota3">Digite a 3ª nota: </label> <input type="text" id="nota3" name="curso" value="" size="2" maxlength="3">
             <label for="nota4">Digite a 4ª nota: </label> <input type="text" id="nota4" name="curso" value="" size="2" maxlength="3">
-            <input type="button" value="Calcular Média" onclick="mediaAluno()">
+            <input type="button" value="Calcular Média" onclick="mediaAluno()"><br><br>
+                <fieldset>
+                    <legend>RESULTADO</legend>
+                        <p id="resultado">  </p>
+                </fieldset>
         </fieldset>
     </form><br>
-    <p id="resultado"></p>
 </body>
 </html>
