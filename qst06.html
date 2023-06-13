@@ -10,7 +10,7 @@
                 {
                     let num = parseInt(document.getElementById("num").value);
                     for (let cont = 1; cont <= 10; cont++) {
-                        document.write (+num + " X " + cont + " = " + num * cont + " <br> " );  
+                        document.getElementById("resultado").innerHTML = num + " X " + cont + " = " + num * cont + " <br> ";  
                     }
                 }       
         }
