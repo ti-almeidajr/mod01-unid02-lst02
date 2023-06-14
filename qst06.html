@@ -8,9 +8,13 @@
         {               
             function tabuada()
                 {
+                    
+                    let cont = 1;
                     let num = parseInt(document.getElementById("num").value);
-                    for (let cont = 1; cont <= 10; cont++) {
-                        document.getElementById("resultado").innerHTML = num + " X " + cont + " = " + num * cont + " <br> ";  
+
+                    while (cont <= 10) {
+                        document.getElementById("resultado").innerHTML = num + " X " + cont + " = " + num * cont + " <br> "; 
+                        cont++;
                     }
                 }       
         }
