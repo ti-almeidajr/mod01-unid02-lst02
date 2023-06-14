@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista 02 - Questão 02</title>
+
+    <script type="text/javascript">          
+        {               
+            function quadrado()
+                {
+                    let cont = 0;
+                    let lista = [];
+                    
+                    while (cont < 5) {
+                        let numero = parseInt(document.getElementById("numero").value);
+                        lista.push(numero);
+                        document.getElementById("resultado").innerHTML = numero;
+                        cont = cont + 1;    
+                    }
+                }       
+        }
+    </script>
+
+</head>
+<body>
+    <label for="numero">Digite um número: </label> <input type="text" id="numero" size="2" maxlength="3">
+    <input type="button" value="Mostrar quadrado dos números" onclick="quadrado()"><br><br>
+    <p id="resultado"></p>
+</body>
+</html>

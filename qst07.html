@@ -13,7 +13,7 @@
                     
                     while (cont < 5) {
                         let num = parseInt(document.getElementById("num").value);
-                        lista.push(num.value);
+                        lista.push(num);
                         document.getElementById("resultado").innerHTML = num;
                         cont = cont + 1;    
                     }
@@ -27,7 +27,7 @@
     <form>
         <fieldset>
             <legend>Questão 07</legend><br>
-            <label for="num">Digite um número: </label> <input type="text" id="num" name="curso" value="" size="2" maxlength="3">
+            <label for="num">Digite um número: </label> <input type="text" id="num" size="2" maxlength="3">
             <input type="button" value="Mostrar quadrado dos números" onclick="numQuadrado()"><br><br>
             <fieldset>
                 <legend>RESULTADO</legend>
