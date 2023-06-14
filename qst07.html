@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista 02 - Questão 07</title>
+
+    <script type="text/javascript">          
+        {               
+            function numQuadrado()
+                {
+                    let num, quadrado;
+                    let cont = 0;
+                    
+                    while (cont < 5) {
+                        num = parseInt(document.getElementById("num").value);
+                        quadrado = Math.pow(num, 2);
+                        document.getElementById("resultado").innerHTML = "Quadrado de " + num + " é " + quadrado + " <br> ";
+                    }
+                }       
+        }
+    </script>
+
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Questão 07</legend><br>
+            <label for="num">Digite um número: </label> <input type="text" id="num" name="curso" value="" size="2" maxlength="3">
+            <input type="button" value="Gerar quadrado dos números" onclick="numQuadrado()"><br><br>
+            <fieldset>
+                <legend>RESULTADO</legend>
+                    <p id="resultado">  </p>
+            </fieldset>
+        </fieldset>
+    </form><br>
+</body>
+</html>
