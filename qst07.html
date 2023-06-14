@@ -8,14 +8,16 @@
         {               
             function numQuadrado()
                 {
-                    let num, quadrado;
                     let cont = 0;
+                    let lista = [];
                     
                     while (cont < 5) {
-                        num = parseInt(document.getElementById("num").value);
-                        quadrado = Math.pow(num, 2);
-                        document.getElementById("resultado").innerHTML = "Quadrado de " + num + " é " + quadrado + " <br> ";
+                        let num = parseInt(document.getElementById("num").value);
+                        lista.push(num[cont]);
+                        document.getElementById("resultado").innerHTML = num;
+                        cont = cont + 1;    
                     }
+                    
                 }       
         }
     </script>
@@ -26,7 +28,7 @@
         <fieldset>
             <legend>Questão 07</legend><br>
             <label for="num">Digite um número: </label> <input type="text" id="num" name="curso" value="" size="2" maxlength="3">
-            <input type="button" value="Gerar quadrado dos números" onclick="numQuadrado()"><br><br>
+            <input type="button" value="Mostrar quadrado dos números" onclick="numQuadrado()"><br><br>
             <fieldset>
                 <legend>RESULTADO</legend>
                     <p id="resultado">  </p>
