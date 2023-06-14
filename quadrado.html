@@ -6,7 +6,14 @@
 
     <script type="text/javascript">          
         {               
-            function quadrado()
+            let num = document.querySelector('input#fnum');
+            let lista = document.querySelector('select#flista');
+            let res = document.querySelector('div#res');
+            let valores = [];
+            
+            function adicionar() {
+
+            }
                    
         }
     </script>
@@ -16,8 +23,9 @@
     <div>
         Digite 05 números: 
         <input type="number" name="fnum" id="fnum">
-        <input type="button" value="Adicionar números">
-        <select name="numlista" id="numlista" size="6"></select>
+        <input type="button" value="Adicionar números" onclick="adicionar()"><br><br>
+        <select name="numlista" id="numlista" size="6"></select><br><br>
+        <input type="button" value="Finalizar"><br>
     </div>
 </body>   
 </html>
