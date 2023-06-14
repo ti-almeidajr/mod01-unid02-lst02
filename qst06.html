@@ -4,34 +4,36 @@
     <meta charset="UTF-8">
     <title>Lista 02 - Questão 06</title>
 
-    <script type="text/javascript">          
-        {               
-            function tabuada()
-                {
-                    
-                    let cont = 1;
-                    let num = parseInt(document.getElementById("num").value);
-
-                    while (cont <= 10) {
-                        document.getElementById("resultado").innerHTML = num + " X " + cont + " = " + num * cont + " <br> "; 
-                        cont++;
-                    }
-                }       
+    <script type="text/javascript">
+        {
+            function tabuada() {
+                
+                let numTab = document.getElementById("numTab")
+                let tab = Number(document.getElementById("fnum").value)
+                let cont = 1
+                
+                while (cont <= 10) {
+                    resultado.innerHTML += tab + " X " + cont + " = " + (tab * cont) + "<br>"
+                    cont ++
+                }
+            }
         }
     </script>
 
 </head>
+
 <body>
     <form>
         <fieldset>
-            <legend>Questão 06</legend><br>
-            <label for="num">Digite um número para gerar a tabuada: </label> <input type="text" id="num" name="curso" value="" size="2" maxlength="3">
-            <input type="button" value="Gerar Tabuada" onclick="tabuada()"><br><br>
+            <legend>Questão 06 - Tabuada</legend><br>
+            <label for="fnum">Digite o número da tabauada: </label>
+            <input type="number" id="fnum">
+            <input type="button" value="Gerar tabuada" onclick="tabuada()"><br><br>
             <fieldset>
                 <legend>RESULTADO</legend>
                     <p id="resultado">  </p>
             </fieldset>
         </fieldset>
-    </form><br>
+    </form>    
 </body>
 </html>
